@@ -1,0 +1,279 @@
+body {
+    background-image: url("images/game_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0; 
+}
+
+#header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url("fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+#header {
+    font-family: Poppins;
+    font-size: 46px;
+}
+
+.row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-box-wide {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    background-color: #FCEAFB;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#info-box-wide img {
+    width: 200px;
+    height: 200px;
+}
+
+#info-box-wide h2 {
+    font-family: Poppins;
+    font-size: 36px;
+}
+
+#info-box-body {
+    font-family: QuickSand;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.cta {
+    width: 20vw;
+    height: 7vh;
+    background-color: #000;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cta a {
+    text-decoration: none;
+    font-family: QuickSand;
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    height: auto;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-box img {
+    width: 15vw;
+    height: 15vh;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.info-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-box-header {
+    font-family: Poppins;
+    font-size: 24px;
+}
+
+.box-body {
+    font-family: QuickSand;
+    font-size: 22px;
+}
+
+.ps-text {
+    font-size: 18px;
+}
+
+.yellow-bg {
+    background-color: #FEF7C5;
+}
+
+.blue-bg {
+    background-color: #BCD3F9;
+}
+
+.green-bg {
+    background-color: #D5FFC9;
+}
+
+.purple-bg {
+    background-color: #F5D1EF;
+}
+
+.image-credits {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: QuickSand;
+    font-size: 24px;
+    margin-top: 40vh;
+}
+
+.image-credits a {
+    color: #fff;
+}
+
+.mobile-button-section {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url("images/game_bg.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #header {
+        font-family: Poppins;
+        font-size: 26px;
+    }
+
+    .mobile-button-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 3vh;
+        left: 10vw;
+    }
+
+    .cta {
+        width: 80vw;
+    }
+
+    .cta a {
+        font-size: 20px;
+    }
+
+    .button-section {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #info-box-wide img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-box {
+        width: 80%; /* Adjust width as needed */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    #info-box-wide {
+        width: 80vw;
+    }
+
+    #info-box-wide h2 {
+        font-size: 18px;
+    }
+    
+    #info-box-body {
+        font-size: 13px;
+    }
+
+    .info-box-header {
+        font-size: 16px;
+    }
+
+    .info-box img {
+        width: 40%;
+        height: 80%;
+        margin-right: 10px;
+    }
+
+    .box-body {
+        font-family: QuickSand;
+        font-size: 14px;
+    }
+
+    .ps-text {
+        font-size: 10px;
+    }
+
+    .image-credits {
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+        padding-bottom: 12vh;
+        margin-top: 20vh;
+    }
+
+    .image-credits a {
+        color: #000;
+    }
+}
